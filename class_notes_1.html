@@ -52,9 +52,48 @@
 <hr>
 <br> 
 <!-- Line break -->
-<p data-line="28" class="code-line"><strong>Q.</strong> How to identify the network and the host portion of an address using a mask?<br>
-<strong>Ans.</strong> Ex IP address - 129.18.128.12
-and the mask is 255.255.0.0</p>
-<p data-line="32" class="code-line">To get the network IP address perform an AND operation between the binary values of the IP address and the mask</p>
+<p data-line="28" class="code-line"><strong>Q.</strong> How to identify the network and the host portion of an address using a mask?<br></p>
+<blockquote data-line="30" class="code-line">
+<p data-line="30" class="code-line">Ex IP address - 129.18.128.12 and the mask is 255.255.0.0</p>
+</blockquote>
+<hr>
+<p data-line="34" class="code-line">To get the network IP address perform an AND operation between the binary values of the IP address and the mask</p>
+<hr>
+<br/>
+<h3 id="date-08-24-2020-1" data-line="40" class="code-line">Date: 08-24-2020</h3>
+<h2 id="address-resolution-protocol-1" data-line="42" class="code-line">Address Resolution Protocol</h2>
+<ul>
+<li data-line="44" class="code-line">
+<p data-line="44" class="code-line">Ethernet Frame</p>
+<ul>
+<li data-line="46" class="code-line">Preamble: Syncs everything up.</li>
+<li data-line="47" class="code-line">Destination and Source address - MAC address. Ethernet doesn't know about IP address. MAC addresses are on the NIC (Network Interface Card).</li>
+<li data-line="48" class="code-line">Data Unit: Data and Source &amp; Destination IPs</li>
+</ul>
+</li>
+<li data-line="50" class="code-line">
+<p data-line="50" class="code-line">Process:</p>
+<ol>
+<li data-line="52" class="code-line">ARP requests the MAC address of an IP address</li>
+<li data-line="53" class="code-line">Places that in a table.
+<ol>
+<li data-line="54" class="code-line">If the MAC address is unknown the host will send out an ARP request with a broadcast MAC address as the destination.</li>
+</ol>
+</li>
+<li data-line="55" class="code-line">The ethernet type field will be 0x806 designating it as an ARP type process.</li>
+</ol>
+</li>
+<li data-line="57" class="code-line">
+<p data-line="57" class="code-line">Proxy ARP is a security risk. Not used anymore.</p>
+</li>
+<li data-line="58" class="code-line">
+<p data-line="58" class="code-line">Gratuitous ARP to broadcast new ARP address.</p>
+</li>
+<li data-line="59" class="code-line">
+<p data-line="59" class="code-line">When a destination address is a FFF.FFF.FFF, every device will listen to it.</p>
+</li>
+</ul>
+<hr>
+<h2 id="tcp-trace-example-1" data-line="63" class="code-line">TCP Trace example</h2>
 
 </body></html>
