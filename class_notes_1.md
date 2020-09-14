@@ -85,3 +85,30 @@ For switches, holds MAC addresses, VLANs, and ports on which the interfaces are 
 ## VLANs
 
 1. Allow you to take a switch and carve it into subnets, and keep them isolated.
+
+---
+
+<br/>
+
+### Date: 08-26-2020
+
+- Homework 1, discussion of the last question
+
+## Routing Information Protocol
+
+- First routing protocol
+- Disadvantages
+  - Accepts only one mask
+  - Didn't care about network bandwidth
+
+## EIGRP/IGRP (Interior Gateway Routing Protocol)
+
+- Cisco introduced IGRP and improved on it by Enhanced Interior Gateway Routing Protocol
+- Would calculate the cost of links
+- Took into consideration link cost, and path cost.
+- Multiply the link cost with 256, which resulted in large costs.
+
+## OSPF (Open Short Path First)
+
+- Each router sees only the routes given by the neighbour, not the whole network.
+- V2 had VLSM (Variable Link Subnet Masking)
